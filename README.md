@@ -24,6 +24,7 @@ Clone this repo, run npm i from the project's root directory, then run npm start
 Make get, put, post, or delete calls to /api/users or api/thoughts. To target a specific user or thought, append the mongodb object id as a url parameter (ex: /api/thought/655ad91ea09d9105f84efb8c).
 
 ![code demo](sociallite-api-demo.gif)
+Full demonstration can be viewed [here](https://drive.google.com/file/d/10qUGPiOxosSm7gg7MPduyS7sxMTehliV/view?usp=sharing).
 
 ## License
 
