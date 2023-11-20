@@ -83,7 +83,7 @@ module.exports = {
                 { username: thought.username },
                 { $pull: { thoughts: params.id } }
             );
-            res.json(thought);
+            res.json({ message: "Thought deleted!" });
         } catch (err) {
             console.error(err);
             res.status(500).json(err);
