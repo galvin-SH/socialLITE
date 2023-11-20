@@ -10,7 +10,7 @@ module.exports = {
             res.json(users);
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
     // get one user by id
@@ -27,7 +27,7 @@ module.exports = {
             res.json(user);
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
     // create user
@@ -37,7 +37,7 @@ module.exports = {
             res.json(user);
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
     // update user by id
@@ -55,7 +55,7 @@ module.exports = {
             res.json(user);
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
     // delete user
@@ -71,7 +71,7 @@ module.exports = {
             res.json({ message: "User and associated thoughts deleted!" });
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
     async addFriend({ params }, res) {
@@ -89,7 +89,7 @@ module.exports = {
             res.json(user);
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
     async deleteFriend({ params }, res) {
@@ -107,7 +107,7 @@ module.exports = {
             res.json(user);
         } catch (err) {
             console.error(err);
-            res.sendStatus(400);
+            res.sendStatus(500);
         }
     },
 };
